@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { Alert } from "react-native";
 import { Thought, ThoughtType, UpdateThoughtInput } from "@/types/thought";
-import { thoughtRepository } from "@/services/storage/LocalThoughtRepository";
+import { thoughtRepository } from "@/services/storage/SqliteThoughtRepository";
 import { notificationService } from "@/services/notifications/NotificationService";
 import { dataTransferService } from "@/services/data/DataTransferService";
 
